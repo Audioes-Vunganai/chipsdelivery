@@ -17,8 +17,8 @@
       rel="stylesheet"
     />
     <link href="./output.css" rel="stylesheet" />
-    <script src="./index.js"></script>
     <title>Chipsy Eats</title>
+    <script src="./index.js"></script>
   </head>
   <body>
     <header class="bg-primary">
@@ -28,7 +28,7 @@
           >50% OFF ON YOUR FIRST ORDER</a
         >
       </div>
-
+      <!-- Navigation -->
       <div class="container mx-auto flex justify-between items-center">
         <div>
           <img src="./imgs/logo.png" alt="logo" class="w-60" />
@@ -49,9 +49,42 @@
             SignIn/SignUp</a
           >
         </div>
-        <div class="lg:hidden text-white cursor-pointer">
+        <button class="lg:hidden text-white cursor-pointer" id="mobile-btn">
           <i class="fa-solid fa-bars text-3xl text-white font-black"></i>
-        </div>
+        </button>
+      </div>
+      <!-- Mobile Menu -->
+      <div
+        class="h-dvh w-3/4 px-4 bg-white absolute top-0 right-0 z-50 hidden"
+        id="mobile-menu"
+      >
+        <nav class="flex flex-col gap-8 text-center pt-20">
+          <a
+            href="index.html"
+            class="inilne-block text-primary font-medium border-b pb-2"
+            >Home</a
+          >
+          <a href="aboutus.html" class="text-primary font-medium border-b pb-2"
+            >About Us</a
+          >
+          <a
+            href="restuarants.html"
+            class="text-primary font-medium border-b pb-2"
+            >Restaurants</a
+          >
+          <a href="services.html" class="text-primary font-medium border-b pb-2"
+            >Services</a
+          >
+          <a
+            href="contactus.html"
+            class="text-primary font-medium border-b pb-2"
+            >Contact Us</a
+          >
+          <a href="#" class="text-primary font-medium">
+            <i class="fa-solid fa-user"></i>
+            SignIn/SignUp</a
+          >
+        </nav>
       </div>
     </header>
 
