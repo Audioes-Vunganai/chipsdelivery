@@ -17,6 +17,7 @@
       rel="stylesheet"
     />
     <link href="./output.css" rel="stylesheet" />
+    <script src="./index.js"></script>
     <title>Chipsy Eats</title>
   </head>
   <body>
@@ -32,14 +33,14 @@
         <div>
           <img src="./imgs/logo.png" alt="logo" class="w-60" />
         </div>
-        <nav class="text-white font-medium flex gap-5">
+        <nav class="hidden lg:flex text-white font-medium gap-5">
           <a href="index.html">Home</a>
           <a href="aboutus.html">About Us</a>
           <a href="restuarants.html">Restaurants</a>
           <a href="services.html">Services</a>
           <a href="contactus.html">Contact Us</a>
         </nav>
-        <div>
+        <div class="hidden lg:flex">
           <a
             href="#"
             class="text-white bg-black px-6 py-4 rounded-full font-medium"
@@ -47,6 +48,9 @@
             <i class="fa-solid fa-user"></i>
             SignIn/SignUp</a
           >
+        </div>
+        <div class="lg:hidden text-white cursor-pointer">
+          <i class="fa-solid fa-bars text-3xl text-white font-black"></i>
         </div>
       </div>
     </header>
@@ -124,7 +128,7 @@
 
     <section class="bg-white mb-20">
       <div class="container mx-auto text-center">
-        <h2 class="text-5xl text-primary font-bold mb-6">
+        <h2 class="text-4xl text-primary font-bold mb-6">
           Popular Cuisine Categories
         </h2>
         <p class="mb-12">
@@ -137,7 +141,7 @@
             class="group flex flex-col gap-4 p-4 items-center rounded-xl hover:bg-primary hover:text-white transition duration-300 ease-in-out"
           >
             <img src="./imgs/pizza1.png" alt="Pizza 1" class="h-40" />
-            <h3 class="font-bold text-2xl text-primary group-hover:text-white">
+            <h3 class="font-bold text-xl text-primary group-hover:text-white">
               Pizza
             </h3>
             <p>Delicious, cheese goodness delivered straight to your door!</p>
@@ -146,7 +150,7 @@
             class="group flex flex-col gap-4 p-4 items-center rounded-xl hover:bg-primary hover:text-white transition duration-300 ease-in-out"
           >
             <img src="./imgs/sushi1.png" alt="Sushi 1" class="h-40" />
-            <h3 class="font-bold text-2xl text-primary group-hover:text-white">
+            <h3 class="font-bold text-xl text-primary group-hover:text-white">
               Sushi
             </h3>
             <p>Fresh, flavorfull rolls crafted with the finest ingredients!</p>
@@ -155,7 +159,7 @@
             class="group flex flex-col gap-4 p-4 items-center rounded-xl hover:bg-primary hover:text-white transition duration-300 ease-in-out"
           >
             <img src="./imgs/burger1.png" alt="Burger 1" class="h-40" />
-            <h3 class="font-bold text-2xl text-primary group-hover:text-white">
+            <h3 class="font-bold text-xl text-primary group-hover:text-white">
               Burgers
             </h3>
             <p>Juice and fresh toppings for the ultimate burger experience!</p>
@@ -164,7 +168,7 @@
             class="group flex flex-col gap-4 p-4 items-center rounded-xl hover:bg-primary hover:text-white transition duration-300 ease-in-out"
           >
             <img src="./imgs/indian1.png" alt="Indian 1" class="h-40" />
-            <h3 class="font-bold text-2xl text-primary group-hover:text-white">
+            <h3 class="font-bold text-xl text-primary group-hover:text-white">
               Indian
             </h3>
             <p>Spicy, aromatic dishes that will bring essence of India!</p>
@@ -173,7 +177,7 @@
       </div>
     </section>
 
-    <section class="bg-white">
+    <section class="bg-white mb-20">
       <div class="container mx-auto grid grid-cols-2">
         <div class="flex flex-col justify-center items-start">
           <h3 class="text-3xl font-medium mb-8">
@@ -222,5 +226,219 @@
         </div>
       </div>
     </section>
+
+    <!-- Testimonials Section -->
+    <section class="bg-white mb-20">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold text-primary">
+            What Our Customers Say
+          </h2>
+          <p class="mt-2">Real reviews from happy customers</p>
+        </div>
+      </div>
+      <!-- Slider -->
+      <div class="w-full">
+        <div
+          id="testimonialSlider"
+          class="flex transition-transform duration-500 ease-in-out"
+        >
+          <!-- Testimonial 1 -->
+          <div class="min-w-full px-4">
+            <div
+              class="bg-white rounded-2xl shadow-lg p-8 max-w-3xl mx-auto text-center"
+            >
+              <img
+                src="./imgs/maimakanaka.jpg"
+                alt=""
+                class="w-20 h-20 rounded-full mx-auto mb-4 object-cover"
+              />
+
+              <h3 class="text-2xl font-bold text-primary">Mai Makanaka</h3>
+
+              <p class="text-yellow-400 text-xl mt-2">★★★★★</p>
+
+              <p class="mt-4">
+                The food arrived hot and fresh. Fast delivery and excellent
+                customer service!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-primary">
+      <div class="container mx-auto pt-6 mb-10">
+        <div class="grid grid-cols-4 mb-8">
+          <div class="col-span-1 px-4">
+            <img class="w-md" src="./imgs/logo.png" alt="" />
+          </div>
+          <div
+            class="col-span-3 px-3 w-full flex justify-center items-center gap-4 border-l-2 border-white"
+          >
+            <div>
+              <p class="text-white text-lg font-bold">
+                Subscribe to latest updates!
+              </p>
+              <p>Stay updated with our latest news and special offers!</p>
+            </div>
+            <div
+              class="bg-white w-full px-4 py-2 rounded-full flex gap-3 transition duration-300 ease-in-out"
+            >
+              <input
+                class="w-full placeholder:text-sm placeholder:font-medium focus:outline-0"
+                type="email"
+                placeholder="Enter your email"
+              />
+              <a
+                href="#"
+                class="bg-primary text-white py-2 px-4 rounded-full hover:bg-secondary transition duration-300 ease-in-out"
+              >
+                Subscribe
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr class="border-white" />
+
+        <!-- Quick Links -->
+        <div class="grid grid-cols-4 gap-4 py-6">
+          <div>
+            <h4 class="text-white text-lg font-bold mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-white hover:text-secondary">Home</a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-secondary">About Us</a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-secondary">Contact</a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-secondary"
+                  >Restaurants</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-secondary">Services</a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-secondary"
+                  >Help Center</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-white text-lg font-bold mb-4">Customer Service</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-white hover:text-secondary">FAQs</a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-secondary"
+                  >Customer Query</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-secondary"
+                  >Returns & Exchanges</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-white text-lg font-bold mb-4">Follow Us</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-white hover:text-secondary"
+                  >Facebook Page</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-secondary"
+                  >Instagram Feed</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-secondary"
+                  >Youtube Channel</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-secondary"
+                  >Tiktok Channel</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-secondary"
+                  >Twitter(X) Profile</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-secondary"
+                  >LinkedIn Page</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-white text-lg font-bold mb-4">Get in Touch</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-white hover:text-secondary"
+                  >Support Email</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-secondary"
+                  >Live Chat</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-secondary"
+                  >Feedback Form</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="flex justify-between items-center gap-4 py-6">
+          <div class="flex justify-center items-center gap-4">
+            <p class="text-white text-center">
+              &copy; 2026 ChipsyDelivery. All rights reserved.
+            </p>
+            <a class="text-white underline" href="#">Privacy Policy</a>
+            <a class="text-white underline" href="#">Terms of Service</a>
+            <a class="text-white underline" href="#">Cookie Settings</a>
+          </div>
+          <div class="flex justify-center gap-4 items-center">
+            <a href="#" class="text-white hover:text-secondary">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="text-white hover:text-secondary">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="text-white hover:text-secondary">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="text-white hover:text-secondary">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="#" class="text-white hover:text-secondary">
+              <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="#" class="text-white hover:text-secondary">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
