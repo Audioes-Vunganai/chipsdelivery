@@ -1,0 +1,313 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Chipsy Eats</title>
+  </head>
+  <body>
+    <header class="bg-primary">
+      <div class="container mx-auto mb-4" id="moving-header">
+        <span class="text-3xl no-underline">&#127881;</span>
+        <a href="index" class="font-medium text-white underline"
+          >50% OFF ON YOUR FIRST ORDER</a
+        >
+      </div>
+      <!-- Navigation -->
+      <div class="container mx-auto flex justify-between items-center">
+        <div>
+          <a class="hover:cursor-pointer" href="index.html">
+            <img src="./imgs/logo.png" alt="logo" class="max-sm:w-35 w-60" />
+          </a>
+        </div>
+        <nav class="hidden lg:flex text-white font-medium gap-5">
+          <a
+            class="hover:text-secondary transition duration-300 ease-in-out"
+            href="index.html"
+            >Home</a
+          >
+          <a
+            class="hover:text-secondary transition duration-300 ease-in-out"
+            href="aboutus.html"
+            >About Us</a
+          >
+          <a
+            class="hover:text-secondary transition duration-300 ease-in-out"
+            href="restuarants.html"
+            >Restaurants</a
+          >
+          <a
+            class="hover:text-secondary transition duration-300 ease-in-out"
+            href="services.html"
+            >Services</a
+          >
+          <a
+            class="hover:text-secondary transition duration-300 ease-in-out"
+            href="contactus.html"
+            >Contact Us</a
+          >
+        </nav>
+        <div class="hidden lg:flex">
+          <a
+            href="#"
+            class="text-white bg-black px-6 py-4 rounded-full font-medium hover:bg-secondary transition duration-300 ease-in-out"
+          >
+            <i class="fa-solid fa-user"></i>
+            SignIn/SignUp</a
+          >
+        </div>
+        <button class="lg:hidden cursor-pointer z-50" id="mobile-btn">
+          <i
+            class="fa-solid fa-bars text-3xl text-white font-black"
+            id="mukuru"
+          ></i>
+        </button>
+      </div>
+      <!-- Mobile Menu -->
+      <div
+        class="h-full w-3/4 px-4 bg-white fixed top-0 right-0 z-40 translate-x-full transition-transform duration-300 ease-in-out"
+        id="mobile-menu"
+      >
+        <nav class="flex flex-col gap-8 text-center justify-center h-full">
+          <a
+            href="index.html"
+            class="inilne-block text-primary font-medium border-b pb-2"
+            >Home</a
+          >
+          <a href="aboutus.html" class="text-primary font-medium border-b pb-2"
+            >About Us</a
+          >
+          <a
+            href="restuarants.html"
+            class="text-primary font-medium border-b pb-2"
+            >Restaurants</a
+          >
+          <a href="services.html" class="text-primary font-medium border-b pb-2"
+            >Services</a
+          >
+          <a
+            href="contactus.html"
+            class="text-primary font-medium border-b pb-2"
+            >Contact Us</a
+          >
+          <a href="#" class="text-primary font-medium bg-black py-2">
+            <i class="fa-solid fa-user"></i>
+            SignIn/SignUp</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <footer class="bg-primary">
+      <div class="container mx-auto pt-6 mb-10">
+        <div class="grid grid-cols-4 mb-8">
+          <div
+            class="col-span-1 px-4 hidden md:flex justify-center items-center"
+          >
+            <img class="w-md" src="./imgs/logo.png" alt="" />
+          </div>
+          <div
+            class="col-span-3 px-3 w-full hidden md:flex flex-col md:flex-row mx-2 md:mx-0 justify-center items-center gap-4 border-l-0 lg:border-l-2 border-white"
+          >
+            <div>
+              <p class="text-white text-lg font-bold">
+                Subscribe to latest updates!
+              </p>
+              <p>Stay updated with our latest news and special offers!</p>
+            </div>
+            <div
+              class="bg-white w-full px-4 py-2 rounded-full flex gap-3 transition duration-300 ease-in-out"
+            >
+              <input
+                class="w-full placeholder:text-sm placeholder:font-medium focus:outline-0"
+                type="email"
+                placeholder="Enter your email"
+              />
+              <a
+                href="#"
+                class="bg-primary text-white py-2 px-4 rounded-full hover:bg-secondary transition duration-300 ease-in-out"
+              >
+                Subscribe
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr class="border-white" />
+
+        <!-- Quick Links -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-6">
+          <div
+            class="flex flex-col items-center justify-center md:justify-start text-center md:text-left"
+          >
+            <h4 class="text-white text-lg font-bold mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-white hover:text-secondary">Home</a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-secondary">About Us</a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-secondary">Contact</a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-secondary"
+                  >Restaurants</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-secondary">Services</a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-secondary"
+                  >Help Center</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center md:justify-start text-center md:text-left"
+          >
+            <h4 class="text-white text-lg font-bold mb-4">Customer Service</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-white hover:text-secondary">FAQs</a>
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-secondary"
+                  >Customer Query</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-secondary"
+                  >Returns & Exchanges</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center md:justify-start text-center md:text-left"
+          >
+            <h4 class="text-white text-lg font-bold mb-4">Follow Us</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-white hover:text-secondary"
+                  >Facebook Page</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-secondary"
+                  >Instagram Feed</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-secondary"
+                  >Youtube Channel</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-secondary"
+                  >Tiktok Channel</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-secondary"
+                  >Twitter(X) Profile</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-secondary"
+                  >LinkedIn Page</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="flex flex-col items-center justify-center md:justify-start text-center md:text-left"
+          >
+            <h4 class="text-white text-lg font-bold mb-4">Get in Touch</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-white hover:text-secondary"
+                  >Support Email</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-secondary"
+                  >Live Chat</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white hover:text-secondary"
+                  >Feedback Form</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div
+          class="flex flex-col lg:flex-row justify-between items-center gap-4 py-6"
+        >
+          <div
+            class="flex flex-col lg:flex-row justify-center items-center gap-4"
+          >
+            <p class="text-white text-center hidden lg:flex">
+              &copy; 2026 ChipsyDelivery. All rights reserved.
+            </p>
+            <a class="text-white underline" href="#">Privacy Policy</a>
+            <a class="text-white underline" href="#">Terms of Service</a>
+            <a class="text-white underline" href="#">Cookie Settings</a>
+          </div>
+          <div class="flex justify-center gap-4 items-center">
+            <a href="#" class="text-white hover:text-secondary">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="text-white hover:text-secondary">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="text-white hover:text-secondary">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="text-white hover:text-secondary">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="#" class="text-white hover:text-secondary">
+              <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="#" class="text-white hover:text-secondary">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+          <div>
+            <p class="text-white text-center lg:hidden">
+              &copy; 2026 ChipsyDelivery. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./index.js"></script>
+  </body>
+</html>
