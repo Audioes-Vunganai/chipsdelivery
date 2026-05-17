@@ -21,10 +21,10 @@
     <title>Chipsy Eats</title>
   </head>
   <body>
-    <header class="bg-primary">
+    <header class="bg-white">
       <div class="container mx-auto mb-4" id="moving-header">
         <span class="text-3xl no-underline">&#127881;</span>
-        <a href="index" class="font-medium text-white underline"
+        <a href="index" class="font-medium text-primary underline"
           >50% OFF ON YOUR FIRST ORDER</a
         >
       </div>
@@ -32,10 +32,10 @@
       <div class="container mx-auto flex justify-between items-center">
         <div>
           <a class="hover:cursor-pointer" href="index.html">
-            <img src="./imgs/logo.png" alt="logo" class="max-sm:w-35 w-60" />
+            <img src="./imgs/logo1.png" alt="logo" class="max-sm:w-35 w-60" />
           </a>
         </div>
-        <nav class="hidden lg:flex text-white font-medium gap-5">
+        <nav class="hidden lg:flex text-primary font-medium gap-5">
           <a
             class="hover:text-secondary transition duration-300 ease-in-out"
             href="index.html"
@@ -65,7 +65,7 @@
         <div class="hidden lg:flex">
           <a
             href="#"
-            class="text-white bg-black px-6 py-4 rounded-full font-medium hover:bg-secondary transition duration-300 ease-in-out"
+            class="text-white bg-primary px-6 py-4 rounded-full font-medium hover:bg-secondary transition duration-300 ease-in-out"
           >
             <i class="fa-solid fa-user"></i>
             SignIn/SignUp</a
@@ -73,7 +73,7 @@
         </div>
         <button class="lg:hidden cursor-pointer z-50" id="mobile-btn">
           <i
-            class="fa-solid fa-bars text-3xl text-white font-black"
+            class="fa-solid fa-bars text-3xl text-primary font-black"
             id="mukuru"
           ></i>
         </button>
@@ -113,10 +113,133 @@
       </div>
     </header>
 
-
-    <section>
+    <!-- Visit Us in Store -->
+    <section class="bg-white mb-20">
       <div class="container mx-auto">
-        
+        <h1
+          class="text-center text-4xl md:text-5xl text-primary font-bold my-20 underline"
+        >
+          Visit Us in Store
+        </h1>
+        <div class="mx-2 grid grid-cols-1 lg:grid-cols-2 gap-4">
+          <div>
+            <h4 class="text-4xl font-semibold text-primary text-center">
+              CHIPSY DELIVERY
+            </h4>
+            <p class="text-lg mt-6">
+              We are located in the heart of Masvingo, near the TM Pick 'n' Pay
+              shopping center. Our store is easily accessible and offers a
+              welcoming atmosphere for all our customers. Whether you're
+              dropping by to pick up your order or just want to say hello, we
+              look forward to seeing you!
+            </p>
+
+            <!-- Open Hours -->
+            <div class="mt-6">
+              <h5 class="text-xl font-semibold text-primary">Open Hours</h5>
+              <div
+                class="grid grid-cols-2 mt-6 border-2 border-primary rounded-lg gap-2"
+              >
+                <!-- Days -->
+                <div class="p-2">
+                  <p class="text-lg">Monday:</p>
+                  <p class="text-lg">Tuesday:</p>
+                  <p class="text-lg">Wednesday:</p>
+                  <p class="text-lg">Thursday:</p>
+                  <p class="text-lg">Friday:</p>
+                  <p class="text-lg">Saturday:</p>
+                  <p class="text-lg">Sunday:</p>
+                </div>
+                <!-- Open Hours -->
+                <div class="p-2">
+                  <p class="text-lg">10:00 AM - 8:00 PM</p>
+                  <p class="text-lg">10:00 AM - 8:00 PM</p>
+                  <p class="text-lg">10:00 AM - 8:00 PM</p>
+                  <p class="text-lg">10:00 AM - 8:00 PM</p>
+                  <p class="text-lg">10:00 AM - 8:00 PM</p>
+                  <p class="text-lg">10:00 AM - 8:00 PM</p>
+                  <p class="text-lg">10:00 AM - 8:00 PM</p>
+                </div>
+              </div>
+              <p class="text-center py-4">
+                Hours of Operation may be subject to change due to holidays or
+                unforeseen circumstances
+              </p>
+            </div>
+          </div>
+          <div class="flex justify-center items-center">
+            <iframe
+              class="rounded-lg"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3747.434444532989!2d30.829779075230952!3d-20.074118181347043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ecce10014dbe42b%3A0xfd45e95366b96149!2sTM%20Pick%20&#39;n&#39;%20Pay%20Masvingo!5e0!3m2!1sen!2sin!4v1779008596284!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section class="mb-20">
+      <div class="container mx-auto">
+        <h1
+          class="text-center text-4xl md:text-5xl text-primary font-bold my-20"
+        >
+          Contact Us
+        </h1>
+        <p class="text-center w-3/4 mx-auto">
+          Have questions, feedback, or interested in joining the Banh Mi World
+          family? We’d love to hear from you! Fill out the form below for
+          general inquiries or franchise information, and our team will get back
+          to you as soon as possible with the details.
+        </p>
+        <div class="mx-2">
+          <form action="#">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+              <input
+                type="text"
+                placeholder="Your Name"
+                class="border border-primary rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-primary"
+              />
+              <input
+                type="email"
+                placeholder="Your Email"
+                class="border border-primary rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-primary"
+              />
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                placeholder="Enter your phone number"
+                class="border border-primary rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-primary"
+              />
+              <input
+                type="text"
+                placeholder="Subject"
+                class="border border-primary rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-primary"
+              />
+            </div>
+            <textarea
+              placeholder="Your Message"
+              class="border border-primary rounded-lg p-3 w-full mt-6 h-40 focus:outline-none focus:ring-2 focus:ring-primary"
+            ></textarea>
+            <div class="flex justify-center mt-6">
+              <button
+                type="submit"
+                class="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary transition duration-300 ease-in-out"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
 
