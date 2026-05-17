@@ -7,3 +7,21 @@
 body {
   font-family: "poppins";
 }
+@keyframes shakeSmooth {
+  0%,
+  100% {
+    transform: rotate(0deg) translateX(0);
+  }
+
+  25% {
+    transform: rotate(-2deg) translateX(-2px);
+  }
+
+  50% {
+    transform: rotate(2deg) translateX(2px);
+  }
+
+  75% {
+    transform: rotate(-1deg) translateX(-1px);
+  }
+}

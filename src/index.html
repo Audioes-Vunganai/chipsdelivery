@@ -60,7 +60,7 @@
       </div>
       <!-- Mobile Menu -->
       <div
-        class="h-full w-3/4 px-4 bg-white absolute top-0 right-0 z-40 hidden"
+        class="h-full w-3/4 px-4 bg-white fixed top-0 right-0 z-40 translate-x-full transition-transform duration-300 ease-in-out"
         id="mobile-menu"
       >
         <nav class="flex flex-col gap-8 text-center justify-center h-full">
@@ -99,27 +99,38 @@
         class="flex flex-col justify-center items-center container mx-auto pt-20"
       >
         <!-- Hero Section Restaurants -->
-        <div class="text-center mb-10">
-          <h1 class="text-5xl font-bold text-white mb-4">
+        <div
+          data-aos="zoom-in"
+          data-aos-delay="500"
+          class="mx-2 text-center mb-10"
+        >
+          <h1
+            class="text-4xl mb-0.5 md:mb-4 leading-normal md:text-5xl font-bold text-white"
+          >
             Chipsy it! Order Food From
+            <span class="md:hidden">Best Restaurants...</span>
           </h1>
-          <h1 class="text-5xl font-bold text-white">Best Restaurants...</h1>
+          <h1 class="hidden text-4xl md:block md:text-5xl font-bold text-white">
+            Best Restaurants...
+          </h1>
         </div>
         <!-- Search Bar -->
-        <div class="flex flex-col gap-8 mb-18 md:flex-row max-md:w-full">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="500"
+          class="mx-2 flex flex-col gap-8 mb-18 md:flex-row"
+        >
           <div
-            class="w-90 h-15 bg-white rounded-xl flex items-center px-4 gap-2 shadow-xl max-sm:w-full"
+            class="w-full md:w-90 h-15 bg-white rounded-xl flex items-center px-4 gap-2"
           >
             <i class="fas fa-map-marker-alt text-2xl text-primary"></i>
             <input
-              class="w-90 h-15 focus:outline-0 placeholder:text-lg placeholder:font-medium"
+              class="w-full md:w-90 h-15 focus:outline-0 placeholder:text-lg placeholder:font-medium"
               type="text"
               placeholder="Enter Location"
             />
           </div>
-          <div
-            class="w-90 h-15 px-4 bg-white rounded-xl shadow-xl max-sm:w-full"
-          >
+          <div class="w-90 h-15 px-4 bg-white rounded-xl max-sm:w-full">
             <a href="restuarants.html">
               <input
                 class="w-90 h-15 px-4 bg-white rounded-xl focus:outline-0 placeholder:text-lg placeholder:font-medium max-sm:w-full"
@@ -130,9 +141,21 @@
           </div>
         </div>
         <!-- Hero Images -->
-        <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-8">
-          <img class="w-140 rounded-xl" src="./imgs/hero1.jpg" alt="" />
-          <img class="w-140 rounded-xl" src="./imgs/hero2.jpg" alt="" />
+        <div
+          data-aos="zoom-in"
+          data-aos-delay="500"
+          class="mx-2 grid sm:grid-cols-1 md:grid-cols-2 gap-8 md:mx-0"
+        >
+          <img
+            class="w-140 rounded-xl transition duration-300 hover:scale-105 hover:animate-[shakeSmooth_0.6s_ease-in-out]"
+            src="./imgs/hero1.jpg"
+            alt=""
+          />
+          <img
+            class="w-140 rounded-xl transition duration-300 hover:scale-105 hover:animate-[shakeSmooth_0.6s_ease-in-out]"
+            src="./imgs/hero2.jpg"
+            alt=""
+          />
         </div>
         <!-- Contact Information -->
         <div
@@ -180,7 +203,7 @@
     </section>
 
     <!-- Popular Cuisine Categories -->
-    <section class="bg-white mb-20">
+    <section data-aos="fade-up" data-aos-delay="500" class="bg-white mb-20">
       <div class="container mx-auto text-center">
         <!-- Section Title -->
         <h2 class="text-4xl text-primary font-bold mb-6">
