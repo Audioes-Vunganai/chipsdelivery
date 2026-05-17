@@ -18,7 +18,6 @@
     />
     <link href="./output.css" rel="stylesheet" />
     <title>Chipsy Eats</title>
-    <script src="./index.js"></script>
   </head>
   <body>
     <header class="bg-primary">
@@ -31,7 +30,7 @@
       <!-- Navigation -->
       <div class="container mx-auto flex justify-between items-center">
         <div>
-          <img src="./imgs/logo.png" alt="logo" class="w-60" />
+          <img src="./imgs/logo.png" alt="logo" class="max-sm:w-35 w-60" />
         </div>
         <nav class="hidden lg:flex text-white font-medium gap-5">
           <a href="index.html">Home</a>
@@ -49,16 +48,19 @@
             SignIn/SignUp</a
           >
         </div>
-        <button class="lg:hidden text-white cursor-pointer" id="mobile-btn">
-          <i class="fa-solid fa-bars text-3xl text-white font-black"></i>
+        <button class="lg:hidden cursor-pointer z-50" id="mobile-btn">
+          <i
+            class="fa-solid fa-bars text-3xl text-white font-black"
+            id="mukuru"
+          ></i>
         </button>
       </div>
       <!-- Mobile Menu -->
       <div
-        class="h-dvh w-3/4 px-4 bg-white absolute top-0 right-0 z-50 hidden"
+        class="h-full w-3/4 px-4 bg-white absolute top-0 right-0 z-40 hidden"
         id="mobile-menu"
       >
-        <nav class="flex flex-col gap-8 text-center pt-20">
+        <nav class="flex flex-col gap-8 text-center justify-center h-full">
           <a
             href="index.html"
             class="inilne-block text-primary font-medium border-b pb-2"
@@ -80,7 +82,7 @@
             class="text-primary font-medium border-b pb-2"
             >Contact Us</a
           >
-          <a href="#" class="text-primary font-medium">
+          <a href="#" class="text-primary font-medium bg-black py-2">
             <i class="fa-solid fa-user"></i>
             SignIn/SignUp</a
           >
@@ -88,19 +90,21 @@
       </div>
     </header>
 
-    <section class="h-dvh bg-primary mb-30">
+    <section class="h-full bg-primary mb-30">
       <div
         class="flex flex-col justify-center items-center container mx-auto pt-20"
       >
+        <!-- Hero Section Restaurants -->
         <div class="text-center mb-10">
           <h1 class="text-5xl font-bold text-white mb-4">
             Chipsy it! Order Food From
           </h1>
           <h1 class="text-5xl font-bold text-white">Best Restaurants...</h1>
         </div>
-        <div class="flex gap-8 mb-18">
+        <!-- Search Bar -->
+        <div class="flex flex-col gap-8 mb-18 md:flex-row max-md:w-full">
           <div
-            class="w-90 h-15 bg-white rounded-xl flex items-center px-4 gap-2 shadow-xl"
+            class="w-90 h-15 bg-white rounded-xl flex items-center px-4 gap-2 shadow-xl max-sm:w-full"
           >
             <i class="fas fa-map-marker-alt text-2xl text-primary"></i>
             <input
@@ -109,22 +113,30 @@
               placeholder="Enter Location"
             />
           </div>
-          <div class="w-120 h-15 px-4 bg-white rounded-xl shadow-xl">
+          <div
+            class="w-90 h-15 px-4 bg-white rounded-xl shadow-xl max-sm:w-full"
+          >
             <a href="restuarants.html">
               <input
-                class="w-120 h-15 px-4 bg-white rounded-xl focus:outline-0 placeholder:text-lg placeholder:font-medium"
+                class="w-90 h-15 px-4 bg-white rounded-xl focus:outline-0 placeholder:text-lg placeholder:font-medium max-sm:w-full"
                 type="text"
                 placeholder="Search Restaurant, Food or Item"
               />
             </a>
           </div>
         </div>
-        <div class="flex gap-20">
-          <img class="w-120 rounded-xl" src="./imgs/hero1.jpg" alt="" />
-          <img class="w-120 rounded-xl" src="./imgs/hero2.jpg" alt="" />
+        <!-- Hero Images -->
+        <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-8">
+          <img class="w-140 rounded-xl" src="./imgs/hero1.jpg" alt="" />
+          <img class="w-140 rounded-xl" src="./imgs/hero2.jpg" alt="" />
         </div>
-        <div class="bg-white grid grid-cols-3 w-full h-30 mt-10 rounded-xl">
-          <div class="flex items-center justify-center gap-8">
+        <!-- Contact Information -->
+        <div
+          class="bg-white grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full mt-10 pt-4 rounded-t-xl"
+        >
+          <div
+            class="flex items-center justify-center gap-8 max-sm:justify-start"
+          >
             <div>
               <i class="fas fa-phone text-2xl text-primary"></i>
             </div>
@@ -134,7 +146,9 @@
               <p>+263 78 564 9876</p>
             </div>
           </div>
-          <div class="flex items-center justify-center gap-8">
+          <div
+            class="flex items-center justify-center gap-8 max-sm:justify-start"
+          >
             <div>
               <i class="fas fa-envelope text-2xl text-primary"></i>
             </div>
@@ -145,7 +159,9 @@
             </div>
           </div>
 
-          <div class="flex items-center justify-center gap-8">
+          <div
+            class="flex items-center justify-center gap-8 max-sm:justify-start md:max-lg:col-span-2"
+          >
             <div>
               <i class="fas fa-map-marker-alt text-2xl text-primary"></i>
             </div>
@@ -473,5 +489,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./index.js"></script>
   </body>
 </html>
