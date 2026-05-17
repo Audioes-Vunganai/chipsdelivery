@@ -1,3 +1,5 @@
+document.querySelector("html").style.scrollBehavior = "smooth";
+
 const mobileBtn = document.getElementById("mobile-btn");
 const mobileMenu = document.getElementById("mobile-menu");
 const mobileIcon = document.getElementById("mukuru");

@@ -16,6 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="./output.css" rel="stylesheet" />
     <title>Chipsy Eats</title>
   </head>
@@ -30,7 +31,9 @@
       <!-- Navigation -->
       <div class="container mx-auto flex justify-between items-center">
         <div>
-          <img src="./imgs/logo.png" alt="logo" class="max-sm:w-35 w-60" />
+          <a class="hover:cursor-pointer" href="index.html">
+            <img src="./imgs/logo.png" alt="logo" class="max-sm:w-35 w-60" />
+          </a>
         </div>
         <nav class="hidden lg:flex text-white font-medium gap-5">
           <a href="index.html">Home</a>
@@ -90,6 +93,7 @@
       </div>
     </header>
 
+    <!-- Hero Section -->
     <section class="h-full bg-primary mb-30">
       <div
         class="flex flex-col justify-center items-center container mx-auto pt-20"
@@ -135,7 +139,7 @@
           class="bg-white grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full mt-10 pt-4 rounded-t-xl"
         >
           <div
-            class="flex items-center justify-center gap-8 max-sm:justify-start"
+            class="flex items-center justify-center gap-8 mx-2 md:mx-0 max-sm:justify-start"
           >
             <div>
               <i class="fas fa-phone text-2xl text-primary"></i>
@@ -147,7 +151,7 @@
             </div>
           </div>
           <div
-            class="flex items-center justify-center gap-8 max-sm:justify-start"
+            class="flex items-center justify-center gap-8 mx-2 md:mx-0 max-sm:justify-start"
           >
             <div>
               <i class="fas fa-envelope text-2xl text-primary"></i>
@@ -160,7 +164,7 @@
           </div>
 
           <div
-            class="flex items-center justify-center gap-8 max-sm:justify-start md:max-lg:col-span-2"
+            class="flex items-center justify-center gap-8 mx-2 md:mx-0 max-sm:justify-start md:max-lg:col-span-2"
           >
             <div>
               <i class="fas fa-map-marker-alt text-2xl text-primary"></i>
@@ -175,8 +179,10 @@
       </div>
     </section>
 
+    <!-- Popular Cuisine Categories -->
     <section class="bg-white mb-20">
       <div class="container mx-auto text-center">
+        <!-- Section Title -->
         <h2 class="text-4xl text-primary font-bold mb-6">
           Popular Cuisine Categories
         </h2>
@@ -185,8 +191,11 @@
           From classic favorites to exotic flavours, <br />
           we have something for everyone.
         </p>
-        <div class="grid grid-cols-4 gap-4">
+        <!-- Cuisine Cards -->
+        <div class="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           <div
+            data-aos="fade-up"
+            data-aos-delay="500"
             class="group flex flex-col gap-4 p-4 items-center rounded-xl hover:bg-primary hover:text-white transition duration-300 ease-in-out"
           >
             <img src="./imgs/pizza1.png" alt="Pizza 1" class="h-40" />
@@ -196,6 +205,8 @@
             <p>Delicious, cheese goodness delivered straight to your door!</p>
           </div>
           <div
+            data-aos="fade-down"
+            data-aos-delay="500"
             class="group flex flex-col gap-4 p-4 items-center rounded-xl hover:bg-primary hover:text-white transition duration-300 ease-in-out"
           >
             <img src="./imgs/sushi1.png" alt="Sushi 1" class="h-40" />
@@ -205,6 +216,8 @@
             <p>Fresh, flavorfull rolls crafted with the finest ingredients!</p>
           </div>
           <div
+            data-aos="fade-up"
+            data-aos-delay="500"
             class="group flex flex-col gap-4 p-4 items-center rounded-xl hover:bg-primary hover:text-white transition duration-300 ease-in-out"
           >
             <img src="./imgs/burger1.png" alt="Burger 1" class="h-40" />
@@ -214,6 +227,8 @@
             <p>Juice and fresh toppings for the ultimate burger experience!</p>
           </div>
           <div
+            data-aos="fade-down"
+            data-aos-delay="500"
             class="group flex flex-col gap-4 p-4 items-center rounded-xl hover:bg-primary hover:text-white transition duration-300 ease-in-out"
           >
             <img src="./imgs/indian1.png" alt="Indian 1" class="h-40" />
@@ -226,9 +241,13 @@
       </div>
     </section>
 
+    <!-- Exclusive Deals Section -->
     <section class="bg-white mb-20">
-      <div class="container mx-auto grid grid-cols-2">
-        <div class="flex flex-col justify-center items-start">
+      <div class="container mx-auto grid gap-4 sm:grid-cols-1 md:grid-cols-2">
+        <!-- Text Content -->
+        <div
+          class="order-2 mx-2 md:mx-0 md:order-1 flex flex-col justify-center items-start"
+        >
           <h3 class="text-3xl font-medium mb-8">
             <span class="text-4xl text-primary font-bold">
               Exclusive Deals </span
@@ -270,7 +289,10 @@
             </div>
           </div>
         </div>
-        <div>
+        <!-- Image Content -->
+        <div
+          class="order-1 mx-2 md:mx-0 md:order-2 flex justify-center items-center"
+        >
           <img src="./imgs/deliveryguy.png" alt="" />
         </div>
       </div>
@@ -320,11 +342,13 @@
     <footer class="bg-primary">
       <div class="container mx-auto pt-6 mb-10">
         <div class="grid grid-cols-4 mb-8">
-          <div class="col-span-1 px-4">
+          <div
+            class="col-span-1 px-4 hidden md:flex justify-center items-center"
+          >
             <img class="w-md" src="./imgs/logo.png" alt="" />
           </div>
           <div
-            class="col-span-3 px-3 w-full flex justify-center items-center gap-4 border-l-2 border-white"
+            class="col-span-3 px-3 w-full hidden md:flex flex-col md:flex-row mx-2 md:mx-0 justify-center items-center gap-4 border-l-0 lg:border-l-2 border-white"
           >
             <div>
               <p class="text-white text-lg font-bold">
@@ -352,8 +376,10 @@
         <hr class="border-white" />
 
         <!-- Quick Links -->
-        <div class="grid grid-cols-4 gap-4 py-6">
-          <div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-6">
+          <div
+            class="flex flex-col items-center justify-center md:justify-start text-center md:text-left"
+          >
             <h4 class="text-white text-lg font-bold mb-4">Quick Links</h4>
             <ul class="space-y-2">
               <li>
@@ -380,7 +406,9 @@
               </li>
             </ul>
           </div>
-          <div>
+          <div
+            class="flex flex-col items-center justify-center md:justify-start text-center md:text-left"
+          >
             <h4 class="text-white text-lg font-bold mb-4">Customer Service</h4>
             <ul class="space-y-2">
               <li>
@@ -398,7 +426,9 @@
               </li>
             </ul>
           </div>
-          <div>
+          <div
+            class="flex flex-col items-center justify-center md:justify-start text-center md:text-left"
+          >
             <h4 class="text-white text-lg font-bold mb-4">Follow Us</h4>
             <ul class="space-y-2">
               <li>
@@ -434,7 +464,9 @@
             </ul>
           </div>
 
-          <div>
+          <div
+            class="flex flex-col items-center justify-center md:justify-start text-center md:text-left"
+          >
             <h4 class="text-white text-lg font-bold mb-4">Get in Touch</h4>
             <ul class="space-y-2">
               <li>
@@ -457,9 +489,13 @@
         </div>
 
         <!-- Social Media Icons -->
-        <div class="flex justify-between items-center gap-4 py-6">
-          <div class="flex justify-center items-center gap-4">
-            <p class="text-white text-center">
+        <div
+          class="flex flex-col lg:flex-row justify-between items-center gap-4 py-6"
+        >
+          <div
+            class="flex flex-col lg:flex-row justify-center items-center gap-4"
+          >
+            <p class="text-white text-center hidden lg:flex">
               &copy; 2026 ChipsyDelivery. All rights reserved.
             </p>
             <a class="text-white underline" href="#">Privacy Policy</a>
@@ -486,10 +522,19 @@
               <i class="fab fa-linkedin-in"></i>
             </a>
           </div>
+          <div>
+            <p class="text-white text-center lg:hidden">
+              &copy; 2026 ChipsyDelivery. All rights reserved.
+            </p>
+          </div>
         </div>
       </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./index.js"></script>
   </body>
 </html>
