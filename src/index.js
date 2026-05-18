@@ -13,15 +13,15 @@ mobileBtn.addEventListener("click", () => {
   mobileIcon.classList.toggle("text-primary");
 });
 
-// header animation
-// const movingHeader = document.getElementById("moving-header");
-let position = window.innerWidth;
-function animate() {
-  position -= 2;
-  movingHeader.style.transform = `translateX(${position}px)`;
-  if (position < -movingHeader.offsetWidth) {
-    position = window.innerWidth;
-  }
-  requestAnimationFrame(animate);
-}
-animate();
+// // header animation
+// // const movingHeader = document.getElementById("moving-header");
+// let position = window.innerWidth;
+// function animate() {
+//   position -= 2;
+//   movingHeader.style.transform = `translateX(${position}px)`;
+//   if (position < -movingHeader.offsetWidth) {
+//     position = window.innerWidth;
+//   }
+//   requestAnimationFrame(animate);
+// }
+// animate();
