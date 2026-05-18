@@ -1056,6 +1056,11 @@
       flex-direction: row;
     }
   }
+  .lg\:rounded-4xl {
+    @media (width >= 64rem) {
+      border-radius: var(--radius-4xl);
+    }
+  }
   .lg\:border-l-2 {
     @media (width >= 64rem) {
       border-left-style: var(--tw-border-style);
