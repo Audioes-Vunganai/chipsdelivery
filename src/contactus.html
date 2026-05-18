@@ -117,13 +117,13 @@
     <section class="bg-white mb-20">
       <div class="container mx-auto">
         <h1
-          class="text-center text-4xl md:text-5xl text-primary font-bold my-20 underline"
+          class="text-center text-4xl md:text-4xl text-primary font-bold my-20 underline"
         >
           Visit Us in Store
         </h1>
         <div class="mx-2 grid grid-cols-1 lg:grid-cols-2 gap-4">
           <div>
-            <h4 class="text-4xl font-semibold text-primary text-center">
+            <h4 class="text-4xl font-bold text-primary text-center">
               CHIPSY DELIVERY
             </h4>
             <p class="text-lg mt-6">
@@ -167,9 +167,11 @@
               </p>
             </div>
           </div>
-          <div class="flex justify-center items-center">
+          <div
+            class="flex justify-center items-center border-primary border-2 bg-gray-900 rounded-xl"
+          >
             <iframe
-              class="rounded-lg"
+              class="rounded-lg p-4 h-full"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3747.434444532989!2d30.829779075230952!3d-20.074118181347043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ecce10014dbe42b%3A0xfd45e95366b96149!2sTM%20Pick%20&#39;n&#39;%20Pay%20Masvingo!5e0!3m2!1sen!2sin!4v1779008596284!5m2!1sen!2sin"
               width="600"
               height="450"
@@ -187,58 +189,78 @@
     <section class="mb-20">
       <div class="container mx-auto">
         <h1
-          class="text-center text-4xl md:text-5xl text-primary font-bold my-20"
+          class="text-center text-4xl md:text-4xl text-primary font-bold my-20 underline"
         >
           Contact Us
         </h1>
         <p class="text-center w-3/4 mx-auto">
-          Have questions, feedback, or interested in joining the Banh Mi World
+          Have questions, feedback, or interested in joining the Crispy Delivery
           family? We’d love to hear from you! Fill out the form below for
           general inquiries or franchise information, and our team will get back
           to you as soon as possible with the details.
         </p>
-        <div class="mx-2">
-          <form action="#">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
-              <input
-                type="text"
-                placeholder="Your Name"
-                class="border border-primary rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-primary"
-              />
-              <input
-                type="email"
-                placeholder="Your Email"
-                class="border border-primary rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-primary"
-              />
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
-                placeholder="Enter your phone number"
-                class="border border-primary rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-primary"
-              />
-              <input
-                type="text"
-                placeholder="Subject"
-                class="border border-primary rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-primary"
-              />
-            </div>
-            <textarea
-              placeholder="Your Message"
-              class="border border-primary rounded-lg p-3 w-full mt-6 h-40 focus:outline-none focus:ring-2 focus:ring-primary"
-            ></textarea>
-            <div class="flex justify-center mt-6">
-              <button
-                type="submit"
-                class="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary transition duration-300 ease-in-out"
-              >
-                Send Message
-              </button>
-            </div>
-          </form>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-20 mx-2">
+          <!-- Information -->
+
+          <div>
+            <h4 class="text-4xl font-bold text-primary text-center">
+              Who We Are
+            </h4>
+            <p class="text-lg mt-6">
+              We are a passionate team dedicated to bringing you the best food
+              delivery experience. Whether you have questions about our menu,
+              need assistance with an order, or want to share your feedback, we
+              are here to help. Your satisfaction is our top priority, and we
+              look forward to connecting with you!
+            </p>
+            <p class="py-8">
+              For any inquiries, please feel free to reach out to us through the
+              contact form on this page.
+            </p>
+          </div>
+          <div class="bg-gray-900 p-6 rounded-xl">
+            <form action="#">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  class="border border-primary rounded-lg p-3 placeholder:text-white focus:text-white focus:outline-none focus:ring-2 focus:ring-primary"
+                />
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  class="border border-primary rounded-lg p-3 placeholder:text-white focus:text-white focus:outline-none focus:ring-2 focus:ring-primary"
+                />
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                  placeholder="Enter your phone number"
+                  class="border border-primary rounded-lg p-3 placeholder:text-white focus:text-white focus:outline-none focus:ring-2 focus:ring-primary"
+                />
+                <input
+                  type="text"
+                  placeholder="Subject"
+                  class="border border-primary rounded-lg p-3 placeholder:text-white focus:text-white focus:outline-none focus:ring-2 focus:ring-primary"
+                />
+              </div>
+              <textarea
+                placeholder="Your Message"
+                class="border border-primary rounded-lg p-3 placeholder:text-white focus:text-white w-full mt-6 h-40 focus:outline-none focus:ring-2 focus:ring-primary"
+              ></textarea>
+              <div class="flex justify-center mt-6">
+                <button
+                  type="submit"
+                  class="bg-primary text-white px-6 py-3 placeholder:text-white focus:text-white rounded-lg font-medium hover:bg-secondary transition duration-300 ease-in-out"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </section>
