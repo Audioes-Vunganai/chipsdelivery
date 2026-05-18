@@ -113,7 +113,7 @@
       </div>
     </header>
 
-    <section class="bg-black my-10">
+    <section class="bg-gray-900 my-10">
       <div class="container mx-auto">
         <div
           class="flex flex-col md:flex-row justify-center items-center gap-4 text-primary uppercase font-medium py-4"
@@ -128,8 +128,294 @@
       </div>
     </section>
 
-    <footer class="bg-primary">
-      <div class="container mx-auto pt-6 mb-10">
+    <section class="mb-20">
+      <div
+        class="container mx-auto relative bg-[url('./imgs/bg-restaurants.png')] bg-center bg-cover bg-no-repeat h-110 rounded-4xl p-6 flex flex-col justify-end items-center text-white text-left gap-4"
+      >
+        <p
+          class="absolute bottom-4 left-4 text-3xl md:text-4xl font-semibold p-4"
+        >
+          Order online from best <br />
+          restaurants
+        </p>
+      </div>
+    </section>
+
+    <!-- Restaurants -->
+    <section>
+      <div class="container mx-auto">
+        <!-- Establishment Type -->
+        <div
+          class="grid gap-6 mx-2 md:mx-0 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mb-10"
+        >
+          <div class="">
+            <h4 class="uppercase text-xl font-semibold mb-4">
+              establishment type
+            </h4>
+            <div class="flex gap-4 items-center">
+              <input class="scale-150" type="checkbox" name="" id="" />
+              <label for="">Restaurants</label>
+            </div>
+            <div class="flex gap-4 items-center">
+              <input class="scale-150" type="checkbox" name="" id="" />
+              <label for="">Coffe & Tea</label>
+            </div>
+            <div class="flex gap-4 items-center">
+              <input class="scale-150" type="checkbox" name="" id="" />
+              <p>Dessert</p>
+            </div>
+            <div class="flex gap-4 items-center">
+              <input class="scale-150" type="checkbox" name="" id="" />
+              <p>Bakeries</p>
+            </div>
+            <div class="flex gap-4 items-center">
+              <input class="scale-150" type="checkbox" name="" id="" />
+              <p>Bars and Purbs</p>
+            </div>
+          </div>
+          <div>
+            <img class="w-full rounded-lg" src="./imgs/ivory-cafe.png" alt="" />
+          </div>
+          <div class="lg:col-span-2">
+            <h4 class="text-xl font-semibold mb-4">1. The Ivory Cafe</h4>
+            <div class="mb-4">
+              <span>4.9</span>
+              <span>&#11088;</span>
+              <span>&#11088;</span>
+              <span>&#11088;</span>
+              <span>&#11088;</span>
+              <span>&#11088;</span>
+              <span>(479) reviews</span>
+              <div class="mb-4">
+                <i class="fa-solid fa-clock text-xl text-secondary"></i>
+                <span class="text-secondary">Open Now</span>
+              </div>
+              <div class="mb-8">
+                <i
+                  class="fa-solid fa-map-marker-alt text-xl text-secondary"
+                ></i>
+                <span class="mt-4 text-secondary">
+                  Westview Industrial, 490E Gerald Heasman Road, Masvingo
+                </span>
+                <p class="underline mt-4">
+                  "What an impeccable hospitality by Chef..."
+                </p>
+                <p class="underline">"Bar with people"</p>
+              </div>
+              <button
+                class="bg-secondary text-white py-2 px-4 rounded-full hover:bg-primary transition duration-300 ease-in-out"
+              >
+                Order Now!
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Meal Type -->
+        <div
+          class="grid gap-6 mx-2 md:mx-0 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mb-10"
+        >
+          <div class="">
+            <h4 class="uppercase text-xl font-semibold mb-4">meal type</h4>
+            <div class="flex gap-4 items-center">
+              <input class="scale-150" type="checkbox" name="" id="" />
+              <label for="">Restaurants</label>
+            </div>
+            <div class="flex gap-4 items-center">
+              <input class="scale-150" type="checkbox" name="" id="" />
+              <label for="">Breakfast</label>
+            </div>
+            <div class="flex gap-4 items-center">
+              <input class="scale-150" type="checkbox" name="" id="" />
+              <p>Chinese</p>
+            </div>
+            <div class="flex gap-4 items-center">
+              <input class="scale-150" type="checkbox" name="" id="" />
+              <p>Lunch</p>
+            </div>
+            <div class="flex gap-4 items-center">
+              <input class="scale-150" type="checkbox" name="" id="" />
+              <p>Dinner</p>
+            </div>
+          </div>
+          <div>
+            <img class="w-full rounded-lg" src="./imgs/thevillage.png" alt="" />
+          </div>
+          <div class="lg:col-span-2">
+            <h4 class="text-xl font-semibold mb-4">2. The Village Zw</h4>
+            <div class="mb-4">
+              <span>4.3</span>
+              <span>&#11088;</span>
+              <span>&#11088;</span>
+              <span>&#11088;</span>
+              <span>&#11088;</span>
+              <span>(443) reviews</span>
+              <div class="mb-4">
+                <i class="fa-solid fa-clock text-xl text-secondary"></i>
+                <span class="text-secondary">Open Now</span>
+              </div>
+              <div class="mb-8">
+                <i
+                  class="fa-solid fa-map-marker-alt text-xl text-secondary"
+                ></i>
+                <span class="mb-4 text-secondary">
+                  Westview Industrial, 490E Gerald Heasman Road, Masvingo
+                </span>
+                <p class="underline mt-4">"75th birthday celebration..."</p>
+                <p class="underline">"Good menu, and patient service"</p>
+              </div>
+              <button
+                class="bg-secondary text-white py-2 px-4 rounded-full hover:bg-primary transition duration-300 ease-in-out"
+              >
+                Order Now!
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Cuisine Type -->
+        <div
+          class="grid gap-6 mx-2 md:mx-0 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mb-10"
+        >
+          <div class="">
+            <h4 class="uppercase text-xl font-semibold mb-4">cuisine type</h4>
+            <div class="flex gap-4 items-center">
+              <input class="scale-150" type="checkbox" name="" id="" />
+              <label for="">Indian</label>
+            </div>
+            <div class="flex gap-4 items-center">
+              <input class="scale-150" type="checkbox" name="" id="" />
+              <label for="">Chinese</label>
+            </div>
+            <div class="flex gap-4 items-center">
+              <input class="scale-150" type="checkbox" name="" id="" />
+              <p>Asian</p>
+            </div>
+            <div class="flex gap-4 items-center">
+              <input class="scale-150" type="checkbox" name="" id="" />
+              <p>Zim Traditional</p>
+            </div>
+            <div class="flex gap-4 items-center">
+              <input class="scale-150" type="checkbox" name="" id="" />
+              <p>Fast Food</p>
+            </div>
+          </div>
+          <div>
+            <img
+              class="w-full rounded-lg"
+              src="./imgs/kreamkoffee.png"
+              alt=""
+            />
+          </div>
+          <div class="lg:col-span-2">
+            <h4 class="text-xl font-semibold mb-4">3. Kream Koffee Zimbabwe</h4>
+            <div class="mb-4">
+              <span>4.0</span>
+              <span>&#11088;</span>
+              <span>&#11088;</span>
+              <span>&#11088;</span>
+              <span>&#11088;</span>
+              <span>(420) reviews</span>
+              <div class="mb-4">
+                <i class="fa-solid fa-clock text-xl text-secondary"></i>
+                <span class="text-secondary">Open Now</span>
+              </div>
+              <div class="mb-8">
+                <i
+                  class="fa-solid fa-map-marker-alt text-xl text-secondary"
+                ></i>
+                <span class="mb-4 text-secondary">
+                  Corner 2 Shuvai Mahofa St, and Simon Mazorodze Ave, Masvingo
+                </span>
+                <p class="underline mt-4">
+                  "Murgh Pista Korma, featuring tender......"
+                </p>
+                <p class="underline">
+                  "Sadza remhunga is good, when served with highfiridzi"
+                </p>
+              </div>
+              <button
+                class="bg-secondary text-white py-2 px-4 rounded-full hover:bg-primary transition duration-300 ease-in-out"
+              >
+                Order Now!
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Dishes -->
+        <div
+          class="grid gap-6 mx-2 md:mx-0 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mb-10"
+        >
+          <div class="">
+            <h4 class="uppercase text-xl font-semibold mb-4">dishes type</h4>
+            <div class="flex gap-4 items-center">
+              <input class="scale-150" type="checkbox" name="" id="" />
+              <label for="">Chicken Dishes</label>
+            </div>
+            <div class="flex gap-4 items-center">
+              <input class="scale-150" type="checkbox" name="" id="" />
+              <label for="">Fish</label>
+            </div>
+            <div class="flex gap-4 items-center">
+              <input class="scale-150" type="checkbox" name="" id="" />
+              <p>Mutton</p>
+            </div>
+            <div class="flex gap-4 items-center">
+              <input class="scale-150" type="checkbox" name="" id="" />
+              <p>Jumbo Shrimp</p>
+            </div>
+            <div class="flex gap-4 items-center">
+              <input class="scale-150" type="checkbox" name="" id="" />
+              <p>Noodle</p>
+            </div>
+          </div>
+          <div>
+            <img
+              class="w-full rounded-lg"
+              src="./imgs/kreamkoffee.png"
+              alt=""
+            />
+          </div>
+          <div class="lg:col-span-2">
+            <h4 class="text-xl font-semibold mb-4">4. Masvingo Food Court</h4>
+            <div class="mb-4">
+              <span>4.0</span>
+              <span>&#11088;</span>
+              <span>&#11088;</span>
+              <span>&#11088;</span>
+              <span>&#11088;</span>
+              <span>(420) reviews</span>
+              <div class="mb-4">
+                <i class="fa-solid fa-clock text-xl text-red-900"></i>
+                <span class="text-red-900">Closed Now!</span>
+              </div>
+              <div class="mb-8">
+                <i
+                  class="fa-solid fa-map-marker-alt text-xl text-secondary"
+                ></i>
+                <span class="mb-4 text-secondary">
+                  Leopold Takawira Ave, Masvingo
+                </span>
+                <p class="underline mt-4">
+                  "Convenient for a quick bite and clean rest rooms ......"
+                </p>
+                <p class="underline">
+                  "It's a good place to get a quick family meal"
+                </p>
+              </div>
+              <button
+                class="bg-red-900 text-white py-2 px-6 rounded-full hover:bg-red-900 transition duration-300 ease-in-out"
+              >
+                Closed!
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <footer class="bg-gray-900 px-10 py-20">
+      <div class="container bg-primary shadow-lg mx-auto p-6 rounded-lg">
         <div class="grid grid-cols-4 mb-8">
           <div
             class="col-span-1 px-4 hidden md:flex justify-center items-center"
