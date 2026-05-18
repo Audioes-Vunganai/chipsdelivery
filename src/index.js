@@ -14,7 +14,7 @@ mobileBtn.addEventListener("click", () => {
 });
 
 // header animation
-const movingHeader = document.getElementById("moving-header");
+// const movingHeader = document.getElementById("moving-header");
 let position = window.innerWidth;
 function animate() {
   position -= 2;
