@@ -17,14 +17,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link href="./output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/output.css" />
     <title>Chipsy Eats</title>
   </head>
   <body>
-    <header class="bg-primary">
+    <header class="bg-white">
       <div class="container mx-auto mb-4" id="moving-header">
         <span class="text-3xl no-underline">&#127881;</span>
-        <a href="index" class="font-medium text-white underline"
+        <a href="index" class="font-medium text-primary underline"
           >50% OFF ON YOUR FIRST ORDER</a
         >
       </div>
@@ -32,10 +32,10 @@
       <div class="container mx-auto flex justify-between items-center">
         <div>
           <a class="hover:cursor-pointer" href="index.html">
-            <img src="./imgs/logo.png" alt="logo" class="max-sm:w-35 w-60" />
+            <img src="./imgs/logo1.png" alt="logo" class="max-sm:w-35 w-60" />
           </a>
         </div>
-        <nav class="hidden lg:flex text-white font-medium gap-5">
+        <nav class="hidden lg:flex text-primary font-medium gap-5">
           <a
             class="hover:text-secondary transition duration-300 ease-in-out"
             href="index.html"
@@ -65,7 +65,7 @@
         <div class="hidden lg:flex">
           <a
             href="#"
-            class="text-white bg-black px-6 py-4 rounded-full font-medium hover:bg-secondary transition duration-300 ease-in-out"
+            class="text-white bg-primary px-6 py-4 rounded-full font-medium hover:bg-secondary transition duration-300 ease-in-out"
           >
             <i class="fa-solid fa-user"></i>
             SignIn/SignUp</a
@@ -73,7 +73,7 @@
         </div>
         <button class="lg:hidden cursor-pointer z-50" id="mobile-btn">
           <i
-            class="fa-solid fa-bars text-3xl text-white font-black"
+            class="fa-solid fa-bars text-3xl text-primary font-black"
             id="mukuru"
           ></i>
         </button>
@@ -113,6 +113,21 @@
       </div>
     </header>
 
+    <section class="bg-gray-900 my-10">
+      <div class="container mx-auto">
+        <div
+          class="flex flex-col md:flex-row justify-center items-center gap-4 text-primary uppercase font-medium py-4"
+        >
+          <p>LET'S ORDER FOR DELIVERY, PICK UP, AND MORE!</p>
+          <button
+            class="bg-primary text-white py-2 px-4 rounded-full hover:bg-secondary transition duration-300 ease-in-out"
+          >
+            Order Now!
+          </button>
+        </div>
+      </div>
+    </section>
+
     <!-- About Us -->
     <section>
       <div class="container mx-auto my-20">
@@ -133,79 +148,6 @@
           this culinary journey and let us satisfy your hunger with just a few
           clicks!
         </p>
-      </div>
-    </section>
-
-    <!-- Popular Cuisine Categories -->
-    <section data-aos="fade-up" data-aos-delay="500" class="bg-white mb-20">
-      <div class="container mx-auto text-center">
-        <!-- Section Title -->
-        <h2 class="text-4xl text-primary font-bold mb-6">
-          Popular Cuisine Categories
-        </h2>
-        <p class="mb-12">
-          Satisfy your cravings with our diverse selection of delicious dishes!
-          From classic favorites to exotic flavours, <br />
-          we have something for everyone.
-        </p>
-        <!-- Cuisine Cards -->
-        <div class="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-          <div
-            data-aos="fade-up"
-            data-aos-delay="500"
-            class="group flex flex-col gap-4 p-4 items-center rounded-xl hover:bg-primary hover:text-white transition duration-300 ease-in-out"
-          >
-            <img src="./imgs/pizza1.png" alt="Pizza 1" class="h-40" />
-            <h3 class="font-bold text-xl text-primary group-hover:text-white">
-              Pizza
-            </h3>
-            <p>Delicious, cheese goodness delivered straight to your door!</p>
-          </div>
-          <div
-            data-aos="fade-down"
-            data-aos-delay="500"
-            class="group flex flex-col gap-4 p-4 items-center rounded-xl hover:bg-primary hover:text-white transition duration-300 ease-in-out"
-          >
-            <img src="./imgs/sushi1.png" alt="Sushi 1" class="h-40" />
-            <h3 class="font-bold text-xl text-primary group-hover:text-white">
-              Sushi
-            </h3>
-            <p>Fresh, flavorfull rolls crafted with the finest ingredients!</p>
-          </div>
-          <div
-            data-aos="fade-up"
-            data-aos-delay="500"
-            class="group flex flex-col gap-4 p-4 items-center rounded-xl hover:bg-primary hover:text-white transition duration-300 ease-in-out"
-          >
-            <img src="./imgs/burger1.png" alt="Burger 1" class="h-40" />
-            <h3 class="font-bold text-xl text-primary group-hover:text-white">
-              Burgers
-            </h3>
-            <p>Juice and fresh toppings for the ultimate burger experience!</p>
-          </div>
-          <div
-            data-aos="fade-down"
-            data-aos-delay="500"
-            class="group flex flex-col gap-4 p-4 items-center rounded-xl hover:bg-primary hover:text-white transition duration-300 ease-in-out"
-          >
-            <img src="./imgs/indian1.png" alt="Indian 1" class="h-40" />
-            <h3 class="font-bold text-xl text-primary group-hover:text-white">
-              Indian
-            </h3>
-            <p>Spicy, aromatic dishes that will bring essence of India!</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- App Download -->
-    <section class="mb-20">
-      <div class="container mx-auto">
-        <img
-          class="w-full rounded-4xl p-4"
-          src="./imgs/appdownload.png"
-          alt=""
-        />
       </div>
     </section>
 
@@ -404,6 +346,6 @@
     <script>
       AOS.init();
     </script>
-    <script src="./index.js"></script>
+    <script src="../js/index.js"></script>
   </body>
 </html>

@@ -2,6 +2,14 @@
   "name": "online-food-ordering",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://github.com/Audioes-Vunganai/chipsdelivery#readme",
+  "bugs": {
+    "url": "https://github.com/Audioes-Vunganai/chipsdelivery/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Audioes-Vunganai/chipsdelivery.git"
+  },
   "license": "ISC",
   "author": "",
   "type": "commonjs",
